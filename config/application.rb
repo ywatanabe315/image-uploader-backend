@@ -33,7 +33,7 @@ module ImageUploadApi
     config.api_only = true
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins /localhost\:\d+/, /image-upload-api-nabeo\.herokuapp\.com/
+        origins /localhost\:\d+/, /image-uploader-front-nabeo\.herokuapp\.com/
         resource "*",
           headers: :any,
           methods: [:get, :post, :options, :head]
